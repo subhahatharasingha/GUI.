@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+  }
+  
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100vh; */
+  }
+
+  .i1 {
+    border: 1px solid blue;
+    width: 100%;
+    height: 500px;
+    margin-top: 80px;
+    background-image: url('../assets/images 11.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    transition: background-image 0.5s ease-in-out; 
+  }
+  
+
+
+  .i2{
+    border: 1px solid blue;
+    width: 100%;
+    /* height: 800px; */
+    background-image: linear-gradient(rgba(255, 255, 252, 0.7),rgba(34, 37, 1, 0.7)),url('../assets/images 11.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  
+  .item1 {
+    display: flex;
+    /* flex-direction: row; */
+    border: 1px solid blue;
+    width: 100%;
+    /* margin-top: 80px; */
+    height: 300%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    flex-direction: column;
+    
+  }
+   .item2 {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid blue;
+    width: 100%;
+    height: 30%;
+    
+    
+  }
+
+  .item3{
+    border: 1px solid blue;
+    height: 1000px;
+    display: flex;
+  }
+  
+  
+  /* .item3 {
+    border: 1px solid blue;
+    width: 60%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    flex-direction: column;
+    
+
+  } */
+  .item4 {
+    border: 1px solid blue;
+    width: 40%; 
+     background-image: url('../assets/images 3.jpg'); 
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item5 {
+    border: 1px solid blue;
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   .item6 {
+    border: 1px solid blue;
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item1 p{
+    color: rgb(0, 0, 0);         
+    font-size: 18px;     
+    line-height: 1.5;     
+    text-align: justify;  
+    margin: 50px 5px;
+
+  }
+   
+    .item1 h1 {
+      color: #020000;          
+      font-size: 36px;         
+      font-family: 'Arial', sans-serif; 
+      margin: 10px 50px; 
+      
+    }
+    .Adopt{
+      width: 150px;
+      height: 40px;
+      border-radius: 25px;
+      background: orange;
+      border: 4;
+      font-weight: 600;
+      
+    }
+    .Adopt:hover{
+      background-color: darkorange;
+      
+    }
+    .countbox{
+      margin: 50px;
+      border: 1px solid blue;
+      width: 500px;
+      height: 150px;
+      display: flex;
+      flex-direction: row;
+      background-color:#ae783f;
+      margin-top: 50px;
+      justify-content: space-between;
+    
+    }
+    .waiting h3{
+    margin-top: 25px;
+      text-align: center;
+      font-size: 35px;
+    }
+    .waiting p{
+      margin: 15px;
+      font-size: 20px;
+      text-align: center;
+      
+    }
+
+    .item3 {
+      text-align: center;
+      /* margin: 50px auto; */
+      /* max-width: 700px; */
+      /* padding: 20px; */
+      font-family: Arial, sans-serif;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      max-height: 700px;
+  }
+  
+  .item3 h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #002147; /* Navy blue */
+      text-align: center;
+  }
+  
+  .advice-cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      
+  }
+  
+  .cardd {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      /* max-width: 350px; */
+      text-align: center;
+      flex: 1;
+      margin: 20px;
+  }
+  
+  .cardd img {
+      width: 250px;
+      height: 250px;
+      
+      border-radius: 8px;
+      margin-bottom: 15px;
+  }
+  
+  .cardd h3 {
+      font-size: 18px;
+      color: #d77a61; 
+      font-weight: bold;
+      margin: 10px 0;
+  }
+  
+  .cardd p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+  }
+  
+  .cardd:hover {
+      transform: translateY(-5px);
+      transition: transform 0.3s ease;
+  }
+  
+  
+  
+ 
+  
