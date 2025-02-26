@@ -1,6 +1,8 @@
 import React from 'react';
 import './Sponsor.css'; 
-import PetCard from '../Compenents/PetCard/PetCard';
+import PetCard1 from '../Compenents/PetCard1/PetCard1';
+import PetCard2 from '../Compenents/PetCard2/PetCard2';
+import PetCard3 from '../Compenents/PetCard3/PetCard3';
 
 const Sponsor = () => {
   return (
@@ -28,10 +30,10 @@ const Sponsor = () => {
         <h3>Dogs</h3>
       <div className='dogpetcard'>
  
-          <PetCard/>
-          <PetCard/>
-          <PetCard/>
-          <PetCard/> 
+          <PetCard1/>
+          <PetCard1/>
+          <PetCard1/>
+          <PetCard1/> 
       </div>
   </div>
 
@@ -40,10 +42,10 @@ const Sponsor = () => {
         <h3>Cats</h3>
       <div className='dogpetcard'>
  
-          <PetCard/>
-          <PetCard/>
-          <PetCard/>
-          <PetCard/> 
+          <PetCard2/>
+          <PetCard2/>
+          <PetCard2/>
+          <PetCard2/> 
       </div>
   </div>
 
@@ -51,10 +53,10 @@ const Sponsor = () => {
         <h3>Birds</h3>
       <div className='dogpetcard'>
  
-          <PetCard/>
-          <PetCard/>
-          <PetCard/>
-          <PetCard/> 
+          <PetCard3/>
+          <PetCard3/>
+          <PetCard3/>
+          <PetCard3/> 
       </div>
   </div>
       

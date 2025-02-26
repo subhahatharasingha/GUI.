@@ -1,21 +1,33 @@
-import React from 'react';
-import './Home.css';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Home.css';
+
+import image11 from '../assets/images 11.jpg';
+import image12 from '../assets/images29.jpg';
+import image13 from '../assets/images34.jpg';
 
 const Home = () => {
-  
-  
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
+
+  const images = [image11, image12, image13];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handleSignUpClick = () => {
-    navigate('/signup'); 
-  }; 
+    navigate('/signup');
+  };
 
   return (
     <div className="container1">
-      <div className='i1'>
-         
-      </div>
+      <div className='i1' style={{ backgroundImage: `url("${images[currentImage]}")` }}></div>
       <div className='i2'>
       <div className="item1">
         {/* <div className="item3"> */}
@@ -53,25 +65,43 @@ const Home = () => {
     <h2>Vet advice and expert help from our team</h2>
     <div class="advice-cards">
         <div class="cardd">
-            <img src="src\assets\images15.jpg" alt="Cat" />
-            <h3>How to care about your cat →</h3>
-            <p>We propose purchasing awesome, logo-call kitten or cat food. Your veterinarian might be capable of investigate your new cat or kitten and determine the nice food regimen. Factors along with...</p>
+            <img src="src\assets\images27.webp" alt="Cat" />
+            <h3>🏡 General Care →</h3>
+            <p>✔ Provide a Safe Environment – Ensure your home is pet-friendly and free from hazards like toxic plants, sharp objects, or small items they could swallow.</p>
+            <p>✔ Give Them Space – Every pet needs a comfortable resting area and a safe spot to retreat when stressed.</p>
         </div>
         <div class="cardd">
-            <img src='src/assets/images16.jpg' alt="Dog" />
-            <h3>5 Tips to Make Your Dog Happy →</h3>
-            <p>1. Growth Playtime In case your dog is a dog social butterfly, playdates with different puppies might be his price ticket to bliss. However for a few dogs, humans are their...</p>
+            <img src='src/assets/images24.jpeg' alt="Dog" />
+            <h3>🥦 Nutrition & Hydration →</h3>
+            <p>✔ Balanced Diet – Feed your pet high-quality food suited to their species, breed, and age. Avoid human food unless it's pet-safe.</p>
+            <p>✔ Fresh Water – Always have clean water available, especially in hot weather.</p>
+            <p>✔ Portion Control – Overfeeding can lead to obesity, so follow vet recommendations.</p>
         </div>
         <div class="cardd">
-            <img src="src/assets/images14.jpg" alt="Dog" />
-            <h3>3 Essentials For Helping Your Dog Lose Weight →</h3>
-            <p>1. Increase workout, properly Meals is prime, but no diet plan, or fitness upkeep plan, is whole without workout. The most apparent, and crucial, pastime to your dog is...</p>
+            <img src="src/assets/images23.jpg" alt="Dog" />
+            <h3>🚶 Exercise & Mental Stimulation →</h3>
+            <p>✔ Daily Walks & Playtime – Regular exercise keeps pets physically fit and mentally stimulated.</p>
+            <p>✔ Training & Enrichment – Use toys, puzzles, and basic training to engage their mind.</p>
+        </div>
+        <div class="cardd">
+            <img src="src/assets/images25.jpg" alt="Dog" />
+            <h3>🩺 Health & Hygiene →</h3>
+            <p>✔ Regular Vet Visits – Schedule routine check-ups and vaccinations.</p>
+            <p>✔ Parasite Prevention – Use flea, tick, and worm prevention as recommended.</p>
+            <p>✔ Dental Care – Brush their teeth or provide dental treats to avoid gum disease.</p>
+        </div>
+        <div class="cardd">
+            <img src="src/assets/images22.jpg" alt="Dog" />
+            <h3>❤️ Love & Attention</h3>
+            <p>✔ Quality Time – Spend time bonding with your pet daily to strengthen your relationship.</p>
+            <p>✔ Respect Their Boundaries – Some pets love cuddles, while others prefer space. Learn to read their signals.</p>
         </div>
     </div>
 </div>
 
       </div>
-    </div>
+      </div>
+   
   );
 };
 

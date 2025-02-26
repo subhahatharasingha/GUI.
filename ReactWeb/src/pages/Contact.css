@@ -1,4 +1,4 @@
-/* General Reset */
+
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Container Styling */
+
 .contact-container-creative {
     /* max-width: 900px; */
     /* margin: 60px auto; */
@@ -20,7 +20,7 @@ body {
     width: 100%;
 }
 
-/* Header Styling */
+
 .contact-heading-creative {
     text-align: center;
     font-size: 2.5rem;
@@ -29,7 +29,6 @@ body {
     /* animation: slideIn 1s ease-out; */
 }
 
-/* Subheading Styling */
 .contact-subheading-creative {
     text-align: center;
     font-size: 1.1rem;
@@ -38,7 +37,7 @@ body {
     /* animation: slideIn 1s ease-out; */
 }
 
-/* Contact Info Grid */
+
 .contact-info-creative {
     display: flex;
     /* justify-content: space-between; */
@@ -48,7 +47,7 @@ body {
 
 }
 
-/* Contact Card Styling */
+
 .contact-card {
     display: flex;
     align-items: center;
@@ -70,7 +69,7 @@ body {
     margin-right: 15px;
 }
 
-/* Card Content Styling */
+
 .contact-card-content h3 {
     margin: 0;
     font-size: 1.2rem;
@@ -82,7 +81,7 @@ body {
     color: #777;
 }
 
-/* Map Section */
+
 .map-section {
     margin: 30px;
     text-align: center;
@@ -94,7 +93,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* Social Media Section */
+
 .social-media-section {
     text-align: center;
     margin-top: 40px;
@@ -106,7 +105,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Social Media Icons */
+
 .social-icons {
     display: flex;
     justify-content: center;
@@ -124,7 +123,7 @@ body {
     filter: brightness(1.2);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .contact-info-creative {
         flex-direction: column;
@@ -145,7 +144,6 @@ body {
     }
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;

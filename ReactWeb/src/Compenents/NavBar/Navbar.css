@@ -19,6 +19,7 @@
     z-index: 1000; 
     opacity: 1; 
     height: 80px;
+
   }
   
 
@@ -35,7 +36,7 @@
     height: 50px;
     border-radius: 25px;
     position: fixed; 
-    top: 35px; 
+    top: 25px; 
     left: 90%;
 
 }
@@ -57,8 +58,14 @@ ul li{
 }
 .link{
     text-decoration: none;
+    
 }
 
+/* .activelink{
+    text-decoration: none;
+    color:chartreuse;
+    
+} */
 
 
 /* .search-box {
@@ -102,7 +109,7 @@ ul li{
     background: rgb(248, 245, 245);
     border: 0;
     position: fixed; 
-    top: 45px; 
+    top: 30px; 
     left: 90%; 
     transform: translateX(-50%);
      z-index: 1000;

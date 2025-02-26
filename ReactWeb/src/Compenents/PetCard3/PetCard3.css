@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .petcard-container {
+      width: 300px; 
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      margin: 16px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      overflow-x: hidden;
+  
+    }
+    
+    
+    
+    .petcard-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .image {
+      width: 100%;
+      height: 150px; 
+      background-color: #eee;
+    }
+    
+    .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+    }
+    
+    .content {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    
+    .content h3 {
+      font-size: 1.2rem;
+      margin: 0 0 8px 0;
+      color: #333;
+    }
+    
+    .content p {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0 0 16px 0;
+      line-height: 1.5;
+    }
+    
+    .price {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #27ae60;
+      margin-top: auto;
+    }
+    .dogpetcard{
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+      overflow-x: hidden;
+      max-width: 100vw;
+      flex-wrap: wrap;
+  
+    }
+
+   
+    

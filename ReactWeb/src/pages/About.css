@@ -29,8 +29,8 @@
     margin-top: 80px;
     padding: 20px;
     overflow: hidden;
-    flex-grow: 1; /* Allows the section to grow based on content */
-    min-height: 250px; /* Minimum height for .aitem1 */
+    flex-grow: 1; 
+    min-height: 250px; 
   }
   
   .aitem1::before {

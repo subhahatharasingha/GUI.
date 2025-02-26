@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef ,useState} from 'react';
 import './Navbar.css';
 import logo_dark from '../../assets/logo-black.png';
 import profile_icon from '../../assets/pimage.png';
@@ -8,6 +8,11 @@ import { Link, useNavigate } from 'react-router-dom';
 const Navbar = () => {
   const navigate = useNavigate();
   const subMenuRef = useRef(null);
+
+  const [signupvisible, setsignupvisible] = useState(true)
+  const [profilevisible, setprofilevisible] = useState(false)
+  //const [active, setActive] = useState(false);
+ 
 
   const handleSignUpClick = () => {
     navigate('/signup');
@@ -23,17 +28,17 @@ const Navbar = () => {
   };
 
   return (
-    <div className='navbar'>
+    <div className= 'navbar'>
       <img src={logo_dark} alt='' className='logo' />
       
       <ul>
-        <li><Link className='link' to="/home">Home</Link></li>
+        <li><Link className= 'link' to="/">Home</Link></li>
         <li><Link className='link' to="/sponsor">Sponsor a pet</Link></li>
         <li><Link className='link' to="/about">About</Link></li>
         <li><Link className='link' to="/contact">Contact us</Link></li>
-        <li><Link className='link' to="/profile">Profile</Link></li>
+        {profilevisible && <li><Link className='link' to="/profile">Profile</Link></li>}
       </ul>
-      <img src={profile_icon} alt='' className='picon' onClick={toggleMenu} />
+      {profilevisible && <img src={profile_icon} alt='' className='picon' onClick={toggleMenu} />}
       <div ref={subMenuRef} className="sub-menu-wrap">
         <div className="sub-menu">
           <div className="user-imfo">
@@ -58,9 +63,9 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <button className="login" onClick={handleSignUpClick}>
+    {signupvisible &&   <button className="login" onClick={handleSignUpClick}>
         Sign up
-      </button>
+      </button>}
     </div>
   );
 };
