@@ -1,33 +1,35 @@
-import express from 'express';
-import mysql from 'mysql';
+import express from "express";
+import dotenv from "dotenv";
+import sequelize from "./config/database.js";
+import userRoutes from "./routes/userRoutes.js";
+import petRoutes from "./routes/petRoutes.js";
+import cors from "cors";
 
+dotenv.config();
 const app = express();
 
-const dbConfig ={
-    host:'bsrxhgc8hf4hlfoh4epg-mysql.services.clever-cloud.com',
-    user:'ugndffnxij11nnw1',
-    password:'ugndffnxij11nnw1',
-    database:'bsrxhgc8hf4hlfoh4epg',
+app.use(
+    cors({
+      origin: "http://localhost:5173",
+      methods: ["GET", "POST", "PUT", "DELETE"],
+      allowedHeaders: ["Content-Type", "Authorization"],
+    })
+  );
 
-};  
+app.use(express.json());
 
-const connection = mysql.createConnection(dbConfig);
+app.use("/users", userRoutes);
+app.use("/pets", petRoutes);
 
-connection.connect((err) => {
-    if(err) {
-        console.error('Error connecting to MySQL:',err.message);
+// Start Server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, async () => {
+    try {
+        await sequelize.authenticate();
+        console.log("Database connected!");
+        await sequelize.sync({ force: false });
+    } catch (error) {
+        console.error("Unable to connect to database:", error);
     }
-    else{
-        console.log('connected to MySQL database!',);
-    }
-
+    console.log(`Server running on http://localhost:${PORT}`);
 });
-
-app.listen(5119,()=>{
-    console.log('server is running on port 5119');
-
-})
-
-app.post('/about',(req,res) => {
-    res.send('post');
-})
