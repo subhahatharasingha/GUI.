@@ -2,19 +2,20 @@ import React from 'react';
 import './Mypet.css';
 import logout_image from '../../assets/images 4.jpg';
 
-const Mypet = () => {
+const Mypet = ({ pet }) => {
+
+  
+
   return (
     <div className="mypetcard-container">
       <div className="image">
-        <img src={logout_image} alt="Pet" />
+      <img src={pet.image} alt={pet.name} />
       </div>
       <div className="mypetcontent">
-        <h3>Card Title</h3>
-        <p>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </p>
-        <span className="mypetprice">Rs. 20,000</span>
+        <h3>{pet.name}</h3>
+        <p>{pet.description}</p>
+        <span><strong>Age:</strong> {pet.age} years</span>
+        <span> <strong>Type:</strong> {pet.type}</span>
       </div>
     </div>
   );

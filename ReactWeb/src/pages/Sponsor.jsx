@@ -1,10 +1,36 @@
-import React from 'react';
-import './Sponsor.css'; 
+import React, { useEffect, useState } from 'react';
 import PetCard1 from '../Compenents/PetCard1/PetCard1';
-import PetCard2 from '../Compenents/PetCard2/PetCard2';
-import PetCard3 from '../Compenents/PetCard3/PetCard3';
+import './Sponsor.css';
 
 const Sponsor = () => {
+  const [pets, setPets] = useState({
+    dogs: [],
+    cats: [],
+    rabbits: [],
+  });
+
+  
+
+  useEffect(() => {
+    const fetchPets = async () => {
+      try {
+        const response = await fetch('http://localhost:8000/pets');
+        const data = await response.json();
+       
+        const categorizedPets = {
+          dogs: data.filter(pet => pet.category === 'Dog'),
+          cats: data.filter(pet => pet.category === 'Cat'),
+          rabbits: data.filter(pet => pet.category === 'Rabbit'),
+        };
+        setPets(categorizedPets);
+      } catch (error) {
+        console.error("Error fetching pets:", error);
+      }
+    };
+
+    fetchPets();
+  }, []);
+
   return (
     <div className="sponsor-container">
       <h1>Every Pet Deserves a Loving Home.</h1>
@@ -19,7 +45,7 @@ const Sponsor = () => {
         <select className="dropdown">
           <option value="dogs">Dogs</option>
           <option value="cats">Cats</option>
-          <option value="birds">Birds</option>
+          <option value="birds">Rabbit</option>
         </select>
         <input type="text" placeholder="Search dogs..." className="search-input" />
         <button className="search-btn">Search</button>
@@ -30,10 +56,9 @@ const Sponsor = () => {
         <h3>Dogs</h3>
       <div className='dogpetcard'>
  
-          <PetCard1/>
-          <PetCard1/>
-          <PetCard1/>
-          <PetCard1/> 
+      {pets.dogs.map(pet => (
+            <PetCard1 key={pet.id} pet={pet} />
+          ))}
       </div>
   </div>
 
@@ -42,21 +67,19 @@ const Sponsor = () => {
         <h3>Cats</h3>
       <div className='dogpetcard'>
  
-          <PetCard2/>
-          <PetCard2/>
-          <PetCard2/>
-          <PetCard2/> 
+      {pets.cats.map(pet => (
+            <PetCard1 key={pet.id} pet={pet} />
+          ))}
       </div>
   </div>
 
   <div> 
-        <h3>Birds</h3>
+        <h3>Rabbit</h3>
       <div className='dogpetcard'>
  
-          <PetCard3/>
-          <PetCard3/>
-          <PetCard3/>
-          <PetCard3/> 
+      {pets.rabbits.map(pet => (
+            <PetCard1 key={pet.id} pet={pet} />
+          ))}
       </div>
   </div>
       

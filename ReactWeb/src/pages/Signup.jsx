@@ -1,14 +1,16 @@
+import axios from 'axios';
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Signup.css';
-import { Link } from 'react-router-dom';
 
 const Signup = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
+    username: '',
     password: '',
   });
-
+  const navigate = useNavigate();
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -17,10 +19,21 @@ const Signup = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Sign Up Data:', formData);
     
+    try {
+      const response = await axios.post("http://localhost:8000/users/signup", formData);
+      if (response.status === 200) {
+        console.log('Registration successful!');
+        alert('Registration successful!');
+        navigate("/login");
+        setFormData({ name: "", username: "", password: "" });
+      }
+    } catch (error) {
+      console.error('Error during registration:', error);
+      alert('Registration failed. Please try again.');
+    }
   };
 
   return (
@@ -28,26 +41,24 @@ const Signup = () => {
       <div className="signup-container">
         <h1>Sign up</h1>
         <form className="signup-form" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Name</label> 
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Enter your name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        <input
+  type="text"
+  id="name"
+  name="name"
+  placeholder="Enter your name"
+  value={formData.name}
+  onChange={handleChange}
+  required
+/>
+
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
               type="email"
-              id="email"
-              name="email"
+              id="username"
+              name="username"
               placeholder="Enter your email"
-              value={formData.email}
+              value={formData.username}
               onChange={handleChange}
               required
             />
@@ -69,10 +80,9 @@ const Signup = () => {
           </button>
         </form>
         <div>
-          <Link className='lnk' to={'/login'}>Already have account?</Link>
+          <Link className='lnk' to={'/login'}>Already have an account?</Link>
         </div>
       </div>
-
     </div>
   );
 };

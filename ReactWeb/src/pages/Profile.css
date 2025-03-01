@@ -1,11 +1,12 @@
 .profile-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   gap: 20px;
   padding: 20px;
   justify-content: space-between;
-  margin: 80px;
+  margin: 10px;
+  
   /* background-image: url('../assets/signup_bg.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,7 +19,7 @@
   justify-content: space-around;
 }
 
-.vet-centers-card {
+/* .vet-centers-card {
   background-color: #becfd6;
   padding: 20px;
   border-radius: 8px;
@@ -26,14 +27,16 @@
   width: 400px;
   max-width: 100%;
   text-align: center;
-}
+} */
 .profile-card {
   position: relative;
+  align-self: flex-start;
+  margin-top: 65px;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
   width: 40%;
-  height: 600px;
+ 
   overflow: hidden;
 
   
@@ -69,6 +72,8 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
+  
   justify-content: space-between;
  
 }
@@ -134,8 +139,12 @@
 }
 .mypets-details{
   display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  margin: 0px;
+  overflow-x: hidden;
+  
+  flex-wrap: wrap;
+  gap: 0px; 
 }
 .profile-info{
  
@@ -158,7 +167,7 @@
 .map2-section {
   margin: 30px;
   text-align: center;
-  width: 650px;
+  width: 100%;
 }
 
 .map2-section h3 {

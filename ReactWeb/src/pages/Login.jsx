@@ -1,13 +1,14 @@
+import axios from 'axios';
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Signup.css';
-import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    username: '',
     password: '',
   });
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,9 +18,29 @@ const Login = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Log in Data:', formData);
+    try{
+      const response = await axios.post("http://localhost:8000/users/login", 
+        formData
+      );
+
+      if(response.status === 200){
+        
+          console.log('Login successful!')
+          alert("Login Success");
+          const id = response.data.user.id ;
+          
+          sessionStorage.setItem("id", id);
+          navigate("/profile");
+          
+          
+          setFormData({username:"",password:""});
+        }
+      
+    }catch (error) {
+      console.error('Error during login:', error);
+      }
     
   };
 
@@ -32,11 +53,11 @@ const Login = () => {
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
-              type="email"
-              id="email"
-              name="email"
+              type="text"
+              id="username"
+              name="username"
               placeholder="Enter your email"
-              value={formData.email}
+              value={formData.username}
               onChange={handleChange}
               required
             />

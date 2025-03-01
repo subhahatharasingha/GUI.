@@ -68,3 +68,41 @@ export const getUserPets = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+// Get User Details
+export const getUserById = async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const user = await User.findByPk(userId, {
+      include: Pet,
+    });
+
+    if (!user) return res.status(404).json({ error: "User not found" });
+
+    res.status(200).json(user);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const updateUser = async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const { name, username, phone, address } = req.body;
+
+   
+    const user = await User.findByPk(userId);
+    if (!user) return res.status(404).json({ error: "User not found" });
+
+    user.name = name || user.name;
+    user.username = username || user.username;
+    user.phone = phone || user.phone;
+    user.address = address || user.address;
+
+    await user.save();
+
+    res.status(200).json({ message: "User updated successfully", user });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};

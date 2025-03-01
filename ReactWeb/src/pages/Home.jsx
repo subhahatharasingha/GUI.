@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
 
@@ -12,6 +12,18 @@ const Home = () => {
   const images = [image11, image12, image13];
 
   const [currentImage, setCurrentImage] = useState(0);
+  const [loguserId, setLoguserId] = useState("");
+
+  useEffect(() => {
+      const fetchData = async () => {
+
+          const id = sessionStorage.getItem("id");
+          setLoguserId(id);
+         
+      };
+    
+      fetchData();
+    }, [loguserId]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,7 +34,11 @@ const Home = () => {
   }, []);
 
   const handleSignUpClick = () => {
+   if(loguserId !=null){
+navigate("/sponsor")
+   }else{
     navigate('/signup');
+   }
   };
 
   return (

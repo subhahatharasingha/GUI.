@@ -1,25 +1,47 @@
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './EditProfile.css';
 
 const EditProfile = ({ user, onSave }) => {
   const [formData, setFormData] = useState({
     name: user?.name || '',
-    email: user?.email || '',
     phone: user?.phone || '',
     address: user?.address || '',
-    bio: user?.bio || '',
   });
+  
+  const [loguserId, setLoguserId] = useState("");
+  const navigate = useNavigate();
+  
+
+  useEffect(() => {
+    const id = sessionStorage.getItem("id");
+    if (id) {
+      setLoguserId(id);
+    }
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleFormSubmit = (e) => {
+
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-  
-    onSave(formData);
-    alert('Profile updated successfully!');
+    
+    try {
+      const response = await axios.put(`http://localhost:8000/users/${loguserId}`, formData);
+      if (response.status === 200) {
+        console.log('User Update success');
+
+        navigate("/profile");
+
+        setFormData({ name: "", phone: '', address: '' });
+      }
+    } catch (error) {
+      console.error('Error Updating User:', error);
+    }
   };
 
   return (
@@ -35,15 +57,7 @@ const EditProfile = ({ user, onSave }) => {
             onChange={handleInputChange}
           />
         </label>
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-          />
-        </label>
+       
         <label>
           Phone:
           <input
@@ -62,14 +76,7 @@ const EditProfile = ({ user, onSave }) => {
             onChange={handleInputChange}
           />
         </label>
-        <label>
-          Bio:
-          <textarea
-            name="bio"
-            value={formData.bio}
-            onChange={handleInputChange}
-          />
-        </label>
+        
         <button type="submit">Save</button>
       </form>
     </div>
