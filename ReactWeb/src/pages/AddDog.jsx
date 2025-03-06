@@ -30,14 +30,14 @@ const AddDog = () => {
       });
   
       if (response.ok) {
-        alert("Dog added successfully!");
+        alert("Pet added successfully!");
         navigate("/admin");
       } else {
-        alert("Error adding dog!");
+        alert("Error adding pet!");
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("Error adding dog!");
+      alert("Error adding pet!");
     }
   };
   
@@ -116,7 +116,7 @@ const AddDog = () => {
         </div>
 
         <button type="submit" className="submit-btn">
-          Add Dog
+          Add Pet
         </button>
       </form>
     </div>
