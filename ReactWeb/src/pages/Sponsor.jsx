@@ -8,28 +8,30 @@ const Sponsor = () => {
     cats: [],
     rabbits: [],
   });
-
   
-
   useEffect(() => {
     const fetchPets = async () => {
       try {
         const response = await fetch('http://localhost:8000/pets');
         const data = await response.json();
-       
+  
+        const filteredPets = data.filter(pet => pet.userId === null); // Filter pets with userId null
+  
         const categorizedPets = {
-          dogs: data.filter(pet => pet.category === 'Dog'),
-          cats: data.filter(pet => pet.category === 'Cat'),
-          rabbits: data.filter(pet => pet.category === 'Rabbit'),
+          dogs: filteredPets.filter(pet => pet.category === 'Dog'),
+          cats: filteredPets.filter(pet => pet.category === 'Cat'),
+          rabbits: filteredPets.filter(pet => pet.category === 'Rabbit'),
         };
+        
         setPets(categorizedPets);
       } catch (error) {
         console.error("Error fetching pets:", error);
       }
     };
-
+  
     fetchPets();
   }, []);
+  
 
   return (
     <div className="sponsor-container">
@@ -50,7 +52,6 @@ const Sponsor = () => {
         <input type="text" placeholder="Search dogs..." className="search-input" />
         <button className="search-btn">Search</button>
       </div>
-     
 
     <div> 
         <h3>Dogs</h3>
@@ -61,7 +62,6 @@ const Sponsor = () => {
           ))}
       </div>
   </div>
-
 
   <div> 
         <h3>Cats</h3>

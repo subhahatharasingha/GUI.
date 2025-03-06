@@ -27,12 +27,21 @@ const Login = () => {
 
       if(response.status === 200){
         
+
+        
           console.log('Login successful!')
           alert("Login Success");
           const id = response.data.user.id ;
+          const role = response.data.user.role ;
+        
           
           sessionStorage.setItem("id", id);
-          navigate("/profile");
+
+          if(role == "admin"){
+            navigate("/admin");
+          }else{
+            navigate("/");
+          }
           
           
           setFormData({username:"",password:""});
@@ -40,8 +49,7 @@ const Login = () => {
       
     }catch (error) {
       console.error('Error during login:', error);
-      }
-    
+      }  
   };
 
   return (

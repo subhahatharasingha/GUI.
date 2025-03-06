@@ -1,0 +1,77 @@
+
+.admin-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .table{
+    border: 1px solid #0a0909;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .category-navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+    padding-top: 20px;
+  }
+  .top-button {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+   padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  
+  .category-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    
+  }
+  
+  .category-btn:hover {
+    background-color: #45a049;
+  }
+
+  .action-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+
+  .edit-icon {
+    color: #4caf50;
+  }
+  
+  .edit-icon:hover {
+    color: #45a049;
+  }
+  
+
+  .delete-icon {
+    color: #f44336;
+  }
+  
+  .delete-icon:hover {
+    color: #d32f2f;
+  }

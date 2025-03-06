@@ -13,4 +13,4 @@ const sequelize = new Sequelize(
   }
 );
 
-export default sequelize; // ES Module export
+export default sequelize;

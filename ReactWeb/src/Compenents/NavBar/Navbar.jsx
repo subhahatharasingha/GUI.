@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logo_dark from '../../assets/logo-black.png';
 import logout_image from '../../assets/logout-image.png';
 import profile_icon from '../../assets/pimage.png';
@@ -21,7 +21,7 @@ const Navbar = () => {
       setprofilevisible(true);
       setsignupvisible(false);
     }
-  }, []);
+  }, [location.pathname]);
   
 
   const handleSignUpClick = () => {

@@ -10,7 +10,7 @@ const Pet = sequelize.define("Pet", {
     type: { type: DataTypes.STRING, allowNull: false },
     description: { type: DataTypes.TEXT, allowNull: false },
     age: { type: DataTypes.INTEGER, allowNull: false },
-    image: { type: DataTypes.STRING, allowNull: true }
+    image: { type: DataTypes.STRING, allowNull: true}
 });
 
 User.hasMany(Pet, { foreignKey: "userId" });
