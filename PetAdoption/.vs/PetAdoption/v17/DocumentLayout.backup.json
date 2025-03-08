@@ -1,0 +1,193 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|c:\\users\\msi\\desktop\\dsa\\petadoption\\petadoption\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|solutionrelative:petadoption\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|c:\\users\\msi\\desktop\\dsa\\petadoption\\petadoption\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|solutionrelative:petadoption\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\petadoption\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|solutionrelative:petadoption\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\petadoption\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|solutionrelative:petadoption\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|c:\\users\\msi\\desktop\\dsa\\petadoption\\petadoption\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|solutionrelative:petadoption\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\petadoption\\petsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|solutionrelative:petadoption\\petsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|c:\\users\\msi\\desktop\\dsa\\petadoption\\petadoption\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|solutionrelative:petadoption\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|c:\\users\\msi\\desktop\\dsa\\petadoption\\petadoption\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|solutionrelative:petadoption\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|c:\\users\\msi\\desktop\\dsa\\petadoption\\petadoption\\petsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|solutionrelative:petadoption\\petsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|c:\\users\\msi\\desktop\\dsa\\petadoption\\petadoption\\user.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|solutionrelative:petadoption\\user.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|c:\\users\\msi\\desktop\\dsa\\petadoption\\petadoption\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E85007C2-8F34-4EC9-828D-574B6F1811AB}|PetAdoption\\PetAdoption.csproj|solutionrelative:petadoption\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\Dashboard.cs",
+              "RelativeDocumentMoniker": "PetAdoption\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\Dashboard.cs [Design]",
+              "RelativeToolTip": "PetAdoption\\Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:57:55.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\Dashboard.cs",
+              "RelativeDocumentMoniker": "PetAdoption\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\Dashboard.cs",
+              "RelativeToolTip": "PetAdoption\\Dashboard.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAcwI8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T16:47:27.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\User.cs",
+              "RelativeDocumentMoniker": "PetAdoption\\User.cs",
+              "ToolTip": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\User.cs [Design]",
+              "RelativeToolTip": "PetAdoption\\User.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T22:09:55.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\User.cs",
+              "RelativeDocumentMoniker": "PetAdoption\\User.cs",
+              "ToolTip": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\User.cs",
+              "RelativeToolTip": "PetAdoption\\User.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAcwLsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T22:20:05.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PetsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\PetsForm.cs",
+              "RelativeDocumentMoniker": "PetAdoption\\PetsForm.cs",
+              "ToolTip": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\PetsForm.cs [Design]",
+              "RelativeToolTip": "PetAdoption\\PetsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T07:56:40.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\Form1.cs",
+              "RelativeDocumentMoniker": "PetAdoption\\Form1.cs",
+              "ToolTip": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\Form1.cs [Design]",
+              "RelativeToolTip": "PetAdoption\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:54:42.605Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "PetAdoption\\DatabaseConnection.cs",
+              "ToolTip": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\DatabaseConnection.cs",
+              "RelativeToolTip": "PetAdoption\\DatabaseConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T08:04:48.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\Form1.cs",
+              "RelativeDocumentMoniker": "PetAdoption\\Form1.cs",
+              "ToolTip": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\Form1.cs",
+              "RelativeToolTip": "PetAdoption\\Form1.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAA2wEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T07:56:01.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\User.Designer.cs",
+              "RelativeDocumentMoniker": "PetAdoption\\User.Designer.cs",
+              "ToolTip": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\User.Designer.cs",
+              "RelativeToolTip": "PetAdoption\\User.Designer.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAEwMMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T22:25:12.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PetsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\PetsForm.cs",
+              "RelativeDocumentMoniker": "PetAdoption\\PetsForm.cs",
+              "ToolTip": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\PetsForm.cs",
+              "RelativeToolTip": "PetAdoption\\PetsForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:09:25.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dashboard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\Dashboard.Designer.cs",
+              "RelativeDocumentMoniker": "PetAdoption\\Dashboard.Designer.cs",
+              "ToolTip": "C:\\Users\\Msi\\Desktop\\DSA\\PetAdoption\\PetAdoption\\Dashboard.Designer.cs",
+              "RelativeToolTip": "PetAdoption\\Dashboard.Designer.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAgwKQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T20:30:26.105Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
